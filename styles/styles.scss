@@ -1,0 +1,53 @@
+@import "../partials/setup";
+@import "../partials/form";
+@import "../partials/app";
+@import "../partials/footer";
+
+
+p {
+	font-family: 'Asap', sans-serif;
+	font-size: 18px;
+}
+
+header{
+	min-height: 96vh;
+	background-image: url(../images/plan.jpeg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.wrapper{
+	margin: auto;
+	max-width: 60%;
+}
+
+// heading description
+.front{
+	text-align: center;
+	background: rgba(white, 0.7);
+	border: 2px solid black;
+	border-radius: 3px;
+	font-family: 'Amatica SC', cursive;
+	font-weight: bold;
+	width: 60%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+	.wrapper{
+		max-width: 80%;
+	}
+}
+
+// Landscape phones and down 
+@media (max-width: 480px) {
+
+	.front{
+		width: 100%;
+	}
+}
+
+
+
+
+

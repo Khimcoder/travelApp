@@ -1,0 +1,113 @@
+.app{
+	display: flex;
+	margin: auto;
+	padding: 3px;
+	position: relative;
+	.countryStamp.countryStamp{
+		padding: 3%;
+		flex-wrap: wrap;
+		width: 45%;
+		background: rgba(253, 241, 227, 0.8);
+		border-top: 6px dashed #17b3e1;
+		border-bottom: 6px dashed #17b3e1;
+		border-radius: 5px;
+		.info{
+			clear:both;
+			padding: 7% 0;
+			border-bottom: 2px solid black;
+			position: relative;
+			&:before{
+				content:"";
+				position: absolute;
+				height: 2px;
+				width: 95%;
+				top: 195%;
+				right: 0%;
+				display: block;
+				background: black;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+			    height: 2px;
+			    width: 95%;
+			    top: 290%;
+			    right: 0%;
+			    display: block;
+			    background: black;
+			}
+		}
+		.flag{
+			max-width: 150px;
+			border: 2px dotted black;
+			float: right;
+			border-radius: 8px;
+			img{
+				width: 100%;
+			}
+			
+		}
+
+	}
+
+}
+.app{
+	.countryContainer{
+		padding: 2%;
+		width: calc(60% - 4%);
+		background: rgba(253, 241, 227, 0.8);
+		border-right: 2px solid black;
+		border-top: 6px dashed #17b3e1;
+		border-bottom: 6px dashed #17b3e1;
+		border-radius: 5px;
+		h1{
+			font-family: 'Barrio', cursive;
+			font-size: 2.25rem;
+		}
+		h2.style{
+			font-family: 'Fira Sans', sans-serif;
+			font-weight: bold;
+		}
+		p{
+			color: teal;
+			letter-spacing: 3px;
+		}
+	}
+}
+
+
+
+ //Landscape phone to portrait tablet 
+@media (max-width: 768px) {
+
+	.app{
+		flex-direction: column;
+		.countryContainer{
+			width: 100%;
+			border-right: none;
+			border-bottom: none;
+			border-radius: 1px;
+		}
+		.countryStamp.countryStamp{
+			width: 100%;
+			border-top: none;
+			text-align: center;
+			border-radius: 1px;
+			// .info{
+			// 	// position: block;
+			// 	&:before{
+			// 		display: none;
+			// 	}
+			// 	&:after{
+			// 		display: none;
+			// 	}
+			// }
+			.flag{
+				float: none;
+			}
+		}
+	}
+
+}
+
+

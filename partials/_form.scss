@@ -1,0 +1,28 @@
+form{
+	text-align: center; 
+	padding: 2% 0;
+	input{
+		 appearance: none;
+    	 border: 5px solid black;
+    	 border-radius: 6px;
+    	 padding: 10px;
+    	 letter-spacing: 2px;
+    	 text-align: center;
+	}
+	input[type=submit]{
+		background-color: black;
+    	padding: 7px 41px;
+    	color: darkseagreen;
+    	letter-spacing: 5px;
+    	margin-top: 5px;
+    	outline: none;
+		 &:hover{
+			background-color: darkseagreen;
+			appearance:none;
+			border: 5px solid darkseagreen;
+			color: black;
+			font-weight: bold;
+			box-shadow: 1px 1px 2px black;
+		 }
+	}
+}

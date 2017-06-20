@@ -1,0 +1,311 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+form {
+  text-align: center;
+  padding: 2% 0; }
+  form input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 5px solid black;
+    border-radius: 6px;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-align: center; }
+  form input[type=submit] {
+    background-color: black;
+    padding: 7px 41px;
+    color: darkseagreen;
+    letter-spacing: 5px;
+    margin-top: 5px;
+    outline: none; }
+    form input[type=submit]:hover {
+      background-color: darkseagreen;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 5px solid darkseagreen;
+      color: black;
+      font-weight: bold;
+      -webkit-box-shadow: 1px 1px 2px black;
+      box-shadow: 1px 1px 2px black; }
+
+.app {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 3px;
+  position: relative; }
+  .app .countryStamp.countryStamp {
+    padding: 3%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 45%;
+    background: rgba(253, 241, 227, 0.8);
+    border-top: 6px dashed #17b3e1;
+    border-bottom: 6px dashed #17b3e1;
+    border-radius: 5px; }
+    .app .countryStamp.countryStamp .info {
+      clear: both;
+      padding: 7% 0;
+      border-bottom: 2px solid black;
+      position: relative; }
+      .app .countryStamp.countryStamp .info:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 95%;
+        top: 195%;
+        right: 0%;
+        display: block;
+        background: black; }
+      .app .countryStamp.countryStamp .info:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 95%;
+        top: 290%;
+        right: 0%;
+        display: block;
+        background: black; }
+    .app .countryStamp.countryStamp .flag {
+      max-width: 150px;
+      border: 2px dotted black;
+      float: right;
+      border-radius: 8px; }
+      .app .countryStamp.countryStamp .flag img {
+        width: 100%; }
+
+.app .countryContainer {
+  padding: 2%;
+  width: calc(60% - 4%);
+  background: rgba(253, 241, 227, 0.8);
+  border-right: 2px solid black;
+  border-top: 6px dashed #17b3e1;
+  border-bottom: 6px dashed #17b3e1;
+  border-radius: 5px; }
+  .app .countryContainer h1 {
+    font-family: 'Barrio', cursive;
+    font-size: 2.25rem; }
+  .app .countryContainer h2.style {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold; }
+  .app .countryContainer p {
+    color: teal;
+    letter-spacing: 3px; }
+
+@media (max-width: 768px) {
+  .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .app .countryContainer {
+      width: 100%;
+      border-right: none;
+      border-bottom: none;
+      border-radius: 1px; }
+    .app .countryStamp.countryStamp {
+      width: 100%;
+      border-top: none;
+      text-align: center;
+      border-radius: 1px; }
+      .app .countryStamp.countryStamp .flag {
+        float: none; } }
+
+footer {
+  background: black; }
+  footer .footerContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .footerContainer p {
+      color: whitesmoke;
+      letter-spacing: 1px;
+      font-size: .75rem; }
+
+@media (max-width: 900px) {
+  footer .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 5px 0; }
+    footer .footerContainer p {
+      margin: 0;
+      text-align: center; } }
+
+p {
+  font-family: 'Asap', sans-serif;
+  font-size: 18px; }
+
+header {
+  min-height: 96vh;
+  background-image: url(../images/plan.jpeg);
+  background-size: cover;
+  background-position: center center; }
+
+.wrapper {
+  margin: auto;
+  max-width: 60%; }
+
+.front {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid black;
+  border-radius: 3px;
+  font-family: 'Amatica SC', cursive;
+  font-weight: bold;
+  width: 60%;
+  margin: auto; }
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 80%; } }
+
+@media (max-width: 480px) {
+  .front {
+    width: 100%; } }

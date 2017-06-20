@@ -1,0 +1,27 @@
+footer{
+	background: black;
+	// z-index: 99;
+	.footerContainer{
+		display: flex;
+		justify-content: space-between;
+		p{
+			color: whitesmoke;
+			letter-spacing: 1px;
+			font-size: .75rem;
+		}
+	}
+}
+
+
+@media (max-width: 900px){
+	footer{
+		.footerContainer{
+			flex-direction: column;
+			padding: 5px 0;
+			p{
+				margin: 0;
+				text-align: center;
+			}
+		}
+	}
+}
